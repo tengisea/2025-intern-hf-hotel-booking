@@ -2,6 +2,7 @@ import Like from "src/models/like";
 import Match from "src/models/match";
 
 export const createLike = async (_: any, args: { from: string; to: string }) => {
+    //   await connectToDb();
     try {
         const existingLike = await Like.findOne({ from: args.from, to: args.to });
         if (existingLike) {
@@ -28,8 +29,9 @@ export const createLike = async (_: any, args: { from: string; to: string }) => 
 
         return await newLike.populate("from").populate("to");
     } catch (error) {
-        console.error("Error creating like:", error);
-        throw new Error("Failed to create like");
-    }
+  console.error("Error creating like:", error); // keep this
+  throw new Error("Failed to create like: "); // updated message
+}
+
 }
 
