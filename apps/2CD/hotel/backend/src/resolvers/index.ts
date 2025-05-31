@@ -9,6 +9,7 @@ import { getRoomForId } from './queries/room/get-room-for-id';
 import {updateRoom} from './mutations/room/update-room'
 import { deleteRoom } from './mutations/room/delete-room';
 import reviewMutations from './mutations/review-mutations';
+import { updateHotel } from './mutations/hotel/update-hotel';
 import { getAllBookings } from './queries/booking/get-all-booking';
 import { getBookingById } from './queries/booking/get-booking-by-id';
 import { createUser } from './mutations/create-user';
@@ -17,6 +18,7 @@ import { updateUserRoleToAdmin } from './mutations/update-user-role-to-admin';
 export const resolvers = {
   Mutation: {
     addHotel,
+    updateHotel,
     CreateBooking,
     updateBooking,
     createRoom,
