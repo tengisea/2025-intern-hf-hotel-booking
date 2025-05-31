@@ -11,6 +11,8 @@ import { deleteRoom } from './mutations/room/delete-room';
 import reviewMutations from './mutations/review-mutations';
 import { getAllBookings } from './queries/booking/get-all-booking';
 import { getBookingById } from './queries/booking/get-booking-by-id';
+import { createUser } from './mutations/create-user';
+import { updateUserRoleToAdmin } from './mutations/update-user-role-to-admin';
 
 export const resolvers = {
   Mutation: {
@@ -21,6 +23,8 @@ export const resolvers = {
     updateRoom,
     deleteRoom,
     ...reviewMutations,
+    createUser,
+    updateUserRoleToAdmin
   },
   Query: {
     getAllHotels,
