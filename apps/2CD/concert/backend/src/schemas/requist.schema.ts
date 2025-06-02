@@ -33,6 +33,7 @@ export const requestDef = gql`
     name: String!
   }
   type Mutation {
+
     updateRequest(input: updateReqInput): Response!
     createRequest(input: createRequestInput!): Response!
   }
