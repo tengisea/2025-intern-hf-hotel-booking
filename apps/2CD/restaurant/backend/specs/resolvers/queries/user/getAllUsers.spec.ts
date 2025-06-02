@@ -1,6 +1,5 @@
 import { User } from 'src/models/user.model';
-import { getAllUser } from 'src/resolvers/queries';
-
+import { getAllUser } from 'src/resolvers/queries/user/get-all-user';
 jest.mock('src/models/user.model', () => ({
   User: {
     find: jest.fn(),
