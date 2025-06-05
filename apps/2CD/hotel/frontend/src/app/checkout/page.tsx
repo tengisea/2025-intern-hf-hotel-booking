@@ -4,7 +4,6 @@ import HotelDetails from '@/components/checkout/HotelDetails';
 import GuestInformation from '@/components/checkout/GuestInformation';
 import ContactInformation from '@/components/checkout/ContactInformation';
 import PaymentDetails from '@/components/checkout/PaymentDetails';
-
 const CheckOut = () => {
   const hotelDetails = {
     hotelName: "Flower Hotel Ulaanbaatar",
