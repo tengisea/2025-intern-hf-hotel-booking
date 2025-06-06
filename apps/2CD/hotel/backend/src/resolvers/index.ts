@@ -17,6 +17,7 @@ import { updateUserRoleToAdmin } from './mutations/update-user-role-to-admin';
 import { getAllUsers } from './queries/user/get-all-user';
 import { getUserById } from './queries/user/get-user-by-id';
 import { reviewQueries } from './queries/review-query';
+import { mostReviewedHotels } from './queries/most-reviewed-hotel';
 
 export const resolvers = {
   Mutation: {
@@ -41,5 +42,6 @@ export const resolvers = {
     getAllUsers,
     getUserById,
     ...reviewQueries,
+    mostReviewedHotels,
   },
 };
