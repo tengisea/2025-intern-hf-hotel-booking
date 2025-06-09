@@ -24,6 +24,14 @@ export const bookingDef = gql`
     createdAt: Date!
     updatedAt: Date!
   }
+  input UserBookingsInput {
+    userId: ID!
+    page: Int!
+  }
+
+  type Query {
+    getUserBooking(input: UserBookingsInput!): [Booking!]!
+    }
 
   input CreateBookingInput {
     userId: ID!
