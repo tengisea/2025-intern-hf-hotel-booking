@@ -12,7 +12,6 @@ import reviewMutations from './mutations/review-mutations';
 import { updateHotel } from './mutations/hotel/update-hotel';
 import { getAllBookings } from './queries/booking/get-all-booking';
 import { getBookingById } from './queries/booking/get-booking-by-id';
-import { createUser } from './mutations/create-user';
 import { updateUserRoleToAdmin } from './mutations/update-user-role-to-admin';
 import { getAllUsers } from './queries/user/get-all-user';
 import { getUserById } from './queries/user/get-user-by-id';
@@ -30,7 +29,6 @@ export const resolvers = {
     updateRoom,
     deleteRoom,
     ...reviewMutations,
-    createUser,
     updateUserRoleToAdmin,
   },
   Query: {
