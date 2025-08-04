@@ -27,5 +27,5 @@ provider "vercel" {
   api_token = var.VERCEL_TOKEN
 
   # Optional default team for all resources
-  team = "team_0ASDilhqwPl5fll9OnzqDM30"
+  team = "team_2TjV6297LA267czkNg94ORef"
 }
